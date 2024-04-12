@@ -15,7 +15,7 @@ app.use(cookieParser());
 app.set('view engine', 'ejs');
 
 // database connection
-const dbURI = 'mongodb+srv://brang:<password>@cluster0.nklxiqd.mongodb.net/nodeauth';
+const dbURI = 'mongodb+srv://brang:brang123@cluster0.nklxiqd.mongodb.net/nodeauth';
 const port = process.env.PORT;
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex:true })
   .then((result) => app.listen(port))
