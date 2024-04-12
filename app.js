@@ -16,7 +16,7 @@ app.set('view engine', 'ejs');
 
 // database connection
 const dbURI = 'mongodb+srv://brang:brang123@cluster0.nklxiqd.mongodb.net/nodeauth?retryWrites=true&w=majority&appName=Cluster0';
-const port = "https://nodeauthjwt-kcyx.onrender.com";
+const port = "https://nodeauthjwt.vercel.app/";
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex:true })
   .then((result) => app.listen(port))
   .catch((err) => console.log(err));
